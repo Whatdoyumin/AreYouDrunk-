@@ -6,7 +6,7 @@ import React from 'react';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>도대체 뭐가 문제였을까? 음..</Text>
+      <Text>도대체 뭐가 문제였을까?</Text>
       <StatusBar style="auto" />
     </View>
   );
