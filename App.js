@@ -16,6 +16,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { Dimensions } from 'react-native';
 
 
+
 const screenWidth = Dimensions.get('window').width;
 const screenHeight = Dimensions.get('window').height;
 
@@ -60,6 +61,7 @@ function Home({ navigation }) {
           onPress={() => navigation.navigate('GameStart')}
           >
           <Text style={styles.buttonText3}>도전?</Text>
+          
         </TouchableOpacity>
 
         <TouchableOpacity
