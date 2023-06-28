@@ -32,8 +32,11 @@ const screenHeight = Dimensions.get('window').height;
 const Stack = createStackNavigator();
 
 import BackgroundImage from './assets/main_screen.png'; // 배경 이미지 파일 경로에 맞게 수정해주세요
-// import IntroPage from
-// inport RecodePage from
+
+import IntroPage from './screens/IntroPage';
+import RecodePage from './screens/RecodePage';
+import GameStart from './screens/GameStart';
+import Makedrink from './screens/Makedrink';
 
 function Home({ navigation }) {
   return (
@@ -96,7 +99,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     backgroundColor:"#FADAA2",
   },
-  
+
   button2: {
     position: 'absolute',
     left: screenWidth * 0.65, // 화면 너비의 30% 위치에 설정
@@ -151,38 +154,6 @@ const styles = StyleSheet.create({
     fontSize: 40,
   },
 });
-
-function IntroPage() {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>게임 설명 페이지다 ㅋ</Text>
-    </View>
-  );
-}
-
-function RecodePage() {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text> 전적 보기 </Text>
-    </View>
-  );
-}
-
-function GameStart() {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text> game start </Text>
-    </View>
-  );
-}
-
-function Makedrink() {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text> make drink </Text>
-    </View>
-  );
-}
 
 function App() {
   return (
