@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-function IntroPage() {
+function GameStart() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>게임 설명 </Text>
+      <Text> Game </Text>
     </View>
   );
 }
-export default IntroPage;
+export default GameStart;
