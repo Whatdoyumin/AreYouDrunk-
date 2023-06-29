@@ -111,19 +111,10 @@ const styles = StyleSheet.create({
     width: 130,
     height: 60,
     position: 'absolute',
-<<<<<<< HEAD
     left: screenWidth * 0.60, // 화면 너비의 30% 위치에 설정
     top: screenHeight * 0.66
     , // 화면 높이의 40% 위치에 설정
     padding:5,
-=======
-    left: screenWidth * 0.65, // 화면 너비의 30% 위치에 설정
-    top: screenHeight * 0.723, // 화면 높이의 40% 위치에 설정
-    padding:10,
-    paddingBottom: 15,
-    paddingTop: 15,
-
->>>>>>> d151738ce409b49c7fe9787891628d834b6f890a
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 5,
@@ -131,7 +122,7 @@ const styles = StyleSheet.create({
   },
 
   button3: {
-    fontSize: 500,
+    
     position: 'absolute',
     left: screenWidth * 0.15, // 화면 너비의 30% 위치에 설정
     top: screenHeight * 0.68, // 화면 높이의 40% 위치에 설정
@@ -179,7 +170,7 @@ const styles = StyleSheet.create({
   buttonText3: {
     color: 'black',
     fontWeight: 'bold',
-    fontSize: 40,
+    fontSize: 60,
   },
 });
 
