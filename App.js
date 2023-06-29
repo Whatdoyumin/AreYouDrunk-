@@ -93,6 +93,9 @@ const styles = StyleSheet.create({
     left: screenWidth * 0.64, // 화면 너비의 30% 위치에 설정
     top: screenHeight * 0.573, // 화면 높이의 40% 위치에 설정
     padding:10,
+    paddingBottom: 15,
+    paddingTop: 15,
+
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 5,
@@ -104,6 +107,9 @@ const styles = StyleSheet.create({
     left: screenWidth * 0.65, // 화면 너비의 30% 위치에 설정
     top: screenHeight * 0.723, // 화면 높이의 40% 위치에 설정
     padding:10,
+    paddingBottom: 15,
+    paddingTop: 15,
+
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 5,
@@ -115,6 +121,9 @@ const styles = StyleSheet.create({
     left: screenWidth * 0.15, // 화면 너비의 30% 위치에 설정
     top: screenHeight * 0.7, // 화면 높이의 40% 위치에 설정
     padding:20,
+    paddingBottom: 15,
+    paddingTop: 15,
+
     // width: 150,
     // height: 150,
     transform: [{ rotate: '13deg' }],
@@ -129,6 +138,9 @@ const styles = StyleSheet.create({
     left: screenWidth * 0.64, // 화면 너비의 30% 위치에 설정
     top: screenHeight * 0.87, // 화면 높이의 40% 위치에 설정
     padding:5,
+    paddingBottom: 13,
+    paddingTop: 13,
+
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 5,
