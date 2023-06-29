@@ -1,11 +1,29 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, ImageBackground, StyleSheet } from 'react-native';
 
 function IntroPage() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>게임 설명 </Text>
+    <View style={styles.container}>
+      <ImageBackground
+        source={require('../assets/intro_page.png')}
+        style={styles.backgroundImage}
+      />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  backgroundImage: {
+    flex: 1,
+    resizeMode: 'cover',
+    width: '100%',
+    height: '100%',
+  },
+});
+
 export default IntroPage;
