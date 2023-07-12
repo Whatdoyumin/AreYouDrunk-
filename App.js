@@ -13,7 +13,7 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import {StartGameScreen} from './Guess-Number-Game-React-Native-Practice/screens/StartGameScreen'
+import StartGameScreen from './Guess-Number-Game-React-Native-Practice/screens/StartGameScreen';
 import { Dimensions } from 'react-native';
 
 
@@ -61,7 +61,9 @@ function Home({ navigation }) {
           style={styles.button3}
           onPress={() => navigation.navigate('GameStart')}
           >
+        
           <Text style={styles.buttonText3}>도전?</Text>
+          
           
         </TouchableOpacity>
 
@@ -186,7 +188,8 @@ function RecodePage() {
 function GameStart() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <StartGameScreen>game</StartGameScreen>
+      <StartGameScreen/>
+      {/* <Text> game start </Text> */}
     </View>
   );
 }
