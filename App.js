@@ -13,6 +13,7 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
+import StartGameScreen from './Guess-Number-Game-React-Native-Practice/screens/StartGameScreen';
 import { Dimensions } from 'react-native';
 
 
@@ -33,11 +34,8 @@ const screenHeight = Dimensions.get('window').height;
 const Stack = createStackNavigator();
 
 import BackgroundImage from './assets/main_screen.png'; // 배경 이미지 파일 경로에 맞게 수정해주세요
-
-import IntroPage from './screens/IntroPage';
-import RecodePage from './screens/RecodePage';
-import GameStart from './screens/GameStart';
-import Makedrink from './screens/Makedrink';
+// import IntroPage from
+// inport RecodePage from
 
 function Home({ navigation }) {
   return (
@@ -63,7 +61,9 @@ function Home({ navigation }) {
           style={styles.button3}
           onPress={() => navigation.navigate('GameStart')}
           >
+        
           <Text style={styles.buttonText3}>도전?</Text>
+          
           
         </TouchableOpacity>
 
@@ -92,11 +92,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   button: {
-    width: 130,
-    height: 60,
     position: 'absolute',
-    left: screenWidth * 0.60, // 화면 너비의 30% 위치에 설정
-    top: screenHeight * 0.55, // 화면 높이의 40% 위치에 설정
+    left: screenWidth * 0.64, // 화면 너비의 30% 위치에 설정
+    top: screenHeight * 0.573, // 화면 높이의 40% 위치에 설정
     padding:10,
     paddingBottom: 15,
     paddingTop: 15,
@@ -106,15 +104,15 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     backgroundColor:"#FADAA2",
   },
-
+  
   button2: {
-    width: 130,
-    height: 60,
     position: 'absolute',
-    left: screenWidth * 0.60, // 화면 너비의 30% 위치에 설정
-    top: screenHeight * 0.66
-    , // 화면 높이의 40% 위치에 설정
-    padding:5,
+    left: screenWidth * 0.65, // 화면 너비의 30% 위치에 설정
+    top: screenHeight * 0.723, // 화면 높이의 40% 위치에 설정
+    padding:10,
+    paddingBottom: 15,
+    paddingTop: 15,
+
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 5,
@@ -122,10 +120,9 @@ const styles = StyleSheet.create({
   },
 
   button3: {
-    
     position: 'absolute',
     left: screenWidth * 0.15, // 화면 너비의 30% 위치에 설정
-    top: screenHeight * 0.68, // 화면 높이의 40% 위치에 설정
+    top: screenHeight * 0.7, // 화면 높이의 40% 위치에 설정
     padding:20,
     paddingBottom: 15,
     paddingTop: 15,
@@ -140,11 +137,9 @@ const styles = StyleSheet.create({
   },
 
   button4: {
-    width: 130,
-    height: 60,
     position: 'absolute',
-    left: screenWidth * 0.60, // 화면 너비의 30% 위치에 설정
-    top: screenHeight * 0.77, // 화면 높이의 40% 위치에 설정
+    left: screenWidth * 0.64, // 화면 너비의 30% 위치에 설정
+    top: screenHeight * 0.87, // 화면 높이의 40% 위치에 설정
     padding:5,
     paddingBottom: 13,
     paddingTop: 13,
@@ -170,9 +165,42 @@ const styles = StyleSheet.create({
   buttonText3: {
     color: 'black',
     fontWeight: 'bold',
-    fontSize: 60,
+    fontSize: 40,
   },
 });
+
+function IntroPage() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>게임 설명 페이지다 ㅋ</Text>
+    </View>
+  );
+}
+
+function RecodePage() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text> 전적 보기 </Text>
+    </View>
+  );
+}
+
+function GameStart() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <StartGameScreen/>
+      {/* <Text> game start </Text> */}
+    </View>
+  );
+}
+
+function Makedrink() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text> make drink </Text>
+    </View>
+  );
+}
 
 function App() {
   return (
